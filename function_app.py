@@ -40,8 +40,8 @@ def save_dataframe_to_azure(df, partition_column, container_name):
             raise
         
         
-@app.route(route="http_trigger")
-def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
+@app.route(route="http_trigger0",auth_level=func.AuthLevel.FUNCTION)
+def http_trigger0(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     try:
