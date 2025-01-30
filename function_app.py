@@ -62,3 +62,4 @@ def http_trigger0(req: func.HttpRequest) -> func.HttpResponse:
     except Exception as e:
         logging.error(f"Error in HTTP trigger function: {str(e)}")
         return func.HttpResponse(f"Internal server error: {str(e)}", status_code=500)
+    #changed 
