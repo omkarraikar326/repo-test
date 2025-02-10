@@ -42,7 +42,7 @@ def extract_image_urls(media_keys, media_data):
     return image_urls  
 
 def pick_latest_tweet(user_id):
-    username = 'downdetector'
+    username = 'sanika_ballal'
     tweet_data_df = pd.DataFrame() 
     response = client.get_users_tweets(
         id=user_id,
