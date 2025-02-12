@@ -60,7 +60,7 @@ def pick_latest_tweet(user_id):
 
         for tweet in response.data:
             time_difference = current_time - tweet.created_at
-            if time_difference > timedelta(minutes=240):
+            if time_difference > timedelta(minutes=360):
                 logging.info("Tweet is older than 8 minutes; skipping.")
                 continue
 
